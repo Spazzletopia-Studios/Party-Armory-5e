@@ -1,13 +1,47 @@
 # Party Armory 5E
 
-An **Armory** tab on the dnd5e **group** actor sheet: the party's shared
-inventory, with judgement. It answers the questions a table asks every session:
-what do we have, who can use it, who should get it, and who is out of
-attunement slots. 5E compatible.
+## Purpose and features
 
-A free SpazzMods module by Spazzletopia Studios.
+Party Armory puts the party's shared inventory and character attunement on a
+dedicated **Armory** tab in the dnd5e Group actor sheet.
 
-## What it does
+- Review members' attunement slots and attune or unattune owned characters.
+- Sort party loot, see suggested recipients, and hand items to characters.
+- Let the GM claim gear and coins from defeated creatures in the current scene.
+
+## Setup
+
+- Foundry VTT V13 or V14 with dnd5e 5.3.0 or later.
+- Party Armory 5E is free and needs no other module. Install it from the
+  [Party Armory 5E releases](https://github.com/Spazzletopia-Studios/Party-Armory-5e/releases/latest),
+  or use its manifest URL in Foundry's **Install Module** dialog.
+- Enable **Party Armory 5E** in **Game Settings → Manage Modules**.
+
+## Quick start
+
+1. Open a dnd5e Group actor sheet that contains the party characters.
+2. Select the **Armory** tab. If sheet integration is unavailable, use the
+   module's Armory panel fallback on the group sheet.
+3. Review the party stash and character attunement rows.
+4. As GM, use Give or claim scene loot; as a character owner, attune or
+   unattune that character's items.
+
+## Detailed use
+
+### Player workflow
+
+Everyone can view the party stash and members allowed by Foundry permissions.
+Character owners can attune or unattune their own character's items.
+
+### GM workflow
+
+Use the current scene's defeated-creature list to Take items or Take all, and
+manage the party purse. Item hand-offs and coins use the controls described
+below.
+
+Free module by Spazzletopia Studios; current public release: 0.1.1.
+
+### Armory features
 
 The Armory tab has three parts.
 
@@ -25,7 +59,7 @@ The Armory tab has three parts.
   gear and their coin, with Take and Take all. A container moves with its
   contents. An unidentified item shows only its cover name.
 
-## Using it
+### Using it
 
 Open a Group actor's sheet and choose the **Armory** tab. Members of the group
 are read from the group itself.
@@ -34,19 +68,11 @@ are read from the group itself.
 - A character's owner can attune and unattune that character's items.
 - Everyone sees the members they are allowed to observe and the party stash.
 
-## Requirements
+## Limits and recovery
 
-- Foundry VTT V13 or V14.
-- The dnd5e system 5.3.0 or newer (tested on 5.3.3 with Foundry 13 and 6.0.3
-  with Foundry 14).
-- No other modules. Party Armory 5E works alongside the SpazzMods Hub but does
-  not need it.
-
-## Known limits in 0.1.0
-
-- The world setting **Players can take party loot** shows players the Give
-  control, but the hand-off itself still needs the gamemaster, and a player's
-  click is refused with a warning. Leave the setting off for now.
+- The **Players can take party loot** setting shows a Give control, but the
+  hand-off still requires the GM; a player's direct attempt is refused. Leave
+  the setting off.
 - What a container holds is not listed, on purpose. Nested containers move
   correctly but are listed one level deep.
 - No translations yet.
